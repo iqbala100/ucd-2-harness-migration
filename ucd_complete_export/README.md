@@ -1,9 +1,4 @@
-# IBM UCD **Complete-ish** Sample Export (Dummy Data)
-
-This package simulates a reasonably complete **UrbanCode Deploy (UCD)** export for a demo application. It is **not** an official IBM export, but the structure and fields are designed to feel familiar for testing and POCs (e.g., mapping to Harness).
-
-**Generated:** 2025-08-19T20:26:48.566532Z
-
+This is Dummy Sample Data for testing
 ## Application: `SampleBankingApp`
 - Components: WebAppComponent, DatabaseComponent, BatchJobComponent, ConfigComponent
 - App Processes: Deploy All, Blue-Green, Rollback All
