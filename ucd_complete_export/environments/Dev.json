@@ -1,0 +1,17 @@
+{
+  "name": "Dev",
+  "type": "dev",
+  "url": "http://dev.samplebanking.local",
+  "properties": {
+    "appUrl": "http://dev.samplebanking.local",
+    "dbUrl": "jdbc:postgresql://dev-db:5432/bank"
+  },
+  "approvalGates": {
+    "preDeploy": [
+      "APPLICATION_ADMIN"
+    ],
+    "postDeploy": [
+      "DEPLOYER"
+    ]
+  }
+}

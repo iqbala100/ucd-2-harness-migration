@@ -1,0 +1,19 @@
+{
+  "properties": [
+    {
+      "name": "maintenanceWindow",
+      "value": "Sun 02:00-03:00 UTC",
+      "secure": false
+    },
+    {
+      "name": "pagerDutyService",
+      "value": "pd-service-id",
+      "secure": false
+    },
+    {
+      "name": "changeTicketId",
+      "value": "${p:request/ticket}",
+      "secure": false
+    }
+  ]
+}

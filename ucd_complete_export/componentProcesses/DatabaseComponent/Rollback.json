@@ -1,0 +1,18 @@
+{
+  "name": "Rollback",
+  "type": "COMPONENT",
+  "description": "Liquibase rollback to tag",
+  "steps": [
+    {
+      "name": "Liquibase Rollback",
+      "plugin": "Liquibase",
+      "command": "Rollback To Tag",
+      "properties": {
+        "tag": "pre-release",
+        "url": "${p:DatabaseComponent/jdbcUrl}",
+        "username": "${p:DatabaseComponent/dbUser}",
+        "password": "${p:?DatabaseComponent/dbPassword}"
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "BatchJobComponent",
+  "template": "BashScript",
+  "sourceConfigPlugin": "File System (Versioned)",
+  "importAutomatically": false,
+  "properties": {
+    "scriptPath": "/artifacts/batch/run_endofday.sh",
+    "cronHint": "0 1 * * *"
+  }
+}

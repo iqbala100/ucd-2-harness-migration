@@ -1,0 +1,11 @@
+{
+  "name": "WebAppComponent",
+  "template": "TomcatWAR",
+  "sourceConfigPlugin": "File System (Versioned)",
+  "importAutomatically": true,
+  "properties": {
+    "artifactPath": "/artifacts/webapp/webapp.war",
+    "deployPath": "/opt/tomcat/webapps/",
+    "serviceName": "tomcat"
+  }
+}

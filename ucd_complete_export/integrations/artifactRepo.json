@@ -1,0 +1,6 @@
+{
+  "type": "nexus3",
+  "baseUrl": "https://nexus.example.com",
+  "repository": "releases",
+  "credentials": "${p:?nexus/creds}"
+}

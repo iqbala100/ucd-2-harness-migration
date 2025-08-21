@@ -1,0 +1,11 @@
+{
+  "name": "1.0.0",
+  "description": "Pre-release snapshot for initial prod cut",
+  "tag": "pre-release",
+  "versions": {
+    "WebAppComponent": "1.0.0",
+    "DatabaseComponent": "1.0.0",
+    "BatchJobComponent": "1.0.0",
+    "ConfigComponent": "1.0.0"
+  }
+}

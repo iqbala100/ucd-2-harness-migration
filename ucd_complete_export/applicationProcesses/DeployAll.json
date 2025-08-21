@@ -1,0 +1,32 @@
+{
+  "name": "Deploy All",
+  "type": "APPLICATION",
+  "description": "Deploy all components",
+  "steps": [
+    {
+      "name": "Deploy Config",
+      "component": "ConfigComponent",
+      "process": "Deploy"
+    },
+    {
+      "name": "Deploy DB",
+      "component": "DatabaseComponent",
+      "process": "Deploy"
+    },
+    {
+      "name": "Deploy Web",
+      "component": "WebAppComponent",
+      "process": "Deploy"
+    },
+    {
+      "name": "Deploy Batch",
+      "component": "BatchJobComponent",
+      "process": "Deploy"
+    },
+    {
+      "name": "Verify Web",
+      "component": "WebAppComponent",
+      "process": "Verify"
+    }
+  ]
+}

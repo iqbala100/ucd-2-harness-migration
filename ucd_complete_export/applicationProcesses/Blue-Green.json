@@ -1,0 +1,33 @@
+{
+  "name": "Blue-Green",
+  "type": "APPLICATION",
+  "description": "Blue/Green strategy for LPL WebApp",
+  "steps": [
+    {
+      "name": "Deploy to Green",
+      "component": "WebAppComponent",
+      "process": "Deploy"
+    },
+    {
+      "name": "Swap Route",
+      "plugin": "Shell",
+      "command": "Run Shell",
+      "properties": {
+        "script": "ln -sfn /opt/tomcat/webapps/webapp-green /opt/tomcat/webapps/ROOT"
+      }
+    },
+    {
+      "name": "Health Check",
+      "component": "WebAppComponent",
+      "process": "Verify"
+    },
+    {
+      "name": "Drain & Remove Blue",
+      "plugin": "Shell",
+      "command": "Run Shell",
+      "properties": {
+        "script": "rm -rf /opt/tomcat/webapps/ROOT-old || true"
+      }
+    }
+  ]
+}

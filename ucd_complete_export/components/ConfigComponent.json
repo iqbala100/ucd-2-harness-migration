@@ -1,0 +1,10 @@
+{
+  "name": "ConfigComponent",
+  "template": null,
+  "sourceConfigPlugin": "File System (Versioned)",
+  "importAutomatically": true,
+  "properties": {
+    "configRoot": "/etc/samplebanking",
+    "owner": "root"
+  }
+}

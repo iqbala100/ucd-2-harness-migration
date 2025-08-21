@@ -1,0 +1,7 @@
+{
+  "name": "TomcatWAR",
+  "description": "Deploy a WAR to Tomcat",
+  "defaultProperties": {
+    "deployPath": "/opt/tomcat/webapps/"
+  }
+}

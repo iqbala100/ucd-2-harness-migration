@@ -1,0 +1,22 @@
+{
+  "name": "Health Check",
+  "type": "GENERIC",
+  "steps": [
+    {
+      "name": "Ping Host",
+      "plugin": "Shell",
+      "command": "Run Shell",
+      "properties": {
+        "script": "ping -c 2 ${p:host}"
+      }
+    },
+    {
+      "name": "Check Port",
+      "plugin": "Shell",
+      "command": "Run Shell",
+      "properties": {
+        "script": "nc -zv ${p:host} ${p:port}"
+      }
+    }
+  ]
+}

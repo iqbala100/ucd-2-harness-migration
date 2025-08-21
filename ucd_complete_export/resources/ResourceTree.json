@@ -1,0 +1,39 @@
+{
+  "resources": [
+    {
+      "path": "/SampleBanking/Dev/TomcatServer01",
+      "agent": "tomcat-agent-01",
+      "components": [
+        "WebAppComponent"
+      ]
+    },
+    {
+      "path": "/SampleBanking/Dev/PostgresDB01",
+      "agent": "db-agent-01",
+      "components": [
+        "DatabaseComponent"
+      ]
+    },
+    {
+      "path": "/SampleBanking/Dev/BatchHost01",
+      "agent": "batch-agent-01",
+      "components": [
+        "BatchJobComponent"
+      ]
+    },
+    {
+      "path": "/SampleBanking/QA/TomcatServer02",
+      "agent": "tomcat-agent-02",
+      "components": [
+        "WebAppComponent"
+      ]
+    },
+    {
+      "path": "/SampleBanking/Prod/TomcatCluster",
+      "agent": "tomcat-agent-pool",
+      "components": [
+        "WebAppComponent"
+      ]
+    }
+  ]
+}

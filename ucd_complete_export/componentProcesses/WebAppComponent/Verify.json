@@ -1,0 +1,15 @@
+{
+  "name": "Verify",
+  "type": "COMPONENT",
+  "description": "HTTP health probe",
+  "steps": [
+    {
+      "name": "Curl Health",
+      "plugin": "Shell",
+      "command": "Run Shell",
+      "properties": {
+        "script": "curl -fsS $${p:environment/appUrl}/health || exit 1"
+      }
+    }
+  ]
+}

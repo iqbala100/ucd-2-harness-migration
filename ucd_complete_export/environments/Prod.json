@@ -1,0 +1,17 @@
+{
+  "name": "Prod",
+  "type": "prod",
+  "url": "https://samplebanking.example.com",
+  "properties": {
+    "appUrl": "https://samplebanking.example.com",
+    "dbUrl": "jdbc:postgresql://prod-db:5432/bank"
+  },
+  "approvalGates": {
+    "preDeploy": [
+      "CHANGE_MANAGER"
+    ],
+    "postDeploy": [
+      "SRE_ONCALL"
+    ]
+  }
+}

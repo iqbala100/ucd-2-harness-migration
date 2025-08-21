@@ -1,0 +1,14 @@
+{
+  "name": "Verify",
+  "type": "COMPONENT",
+  "steps": [
+    {
+      "name": "Test Connectivity",
+      "plugin": "Shell",
+      "command": "Run Shell",
+      "properties": {
+        "script": "echo 'select 1' | psql ${p:DatabaseComponent/jdbcUrl}"
+      }
+    }
+  ]
+}

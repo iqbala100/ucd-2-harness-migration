@@ -1,0 +1,12 @@
+{
+  "name": "DatabaseComponent",
+  "template": "LiquibaseTemplate",
+  "sourceConfigPlugin": "File System (Versioned)",
+  "importAutomatically": true,
+  "properties": {
+    "changeLogFile": "/artifacts/db/changelog.xml",
+    "jdbcUrl": "jdbc:postgresql://db.example.internal:5432/bank",
+    "dbUser": "bank_app",
+    "dbPassword": "${p:?DatabaseComponent/dbPassword}"
+  }
+}

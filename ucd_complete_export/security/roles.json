@@ -1,0 +1,44 @@
+{
+  "roles": [
+    {
+      "name": "APPLICATION_ADMIN",
+      "permissions": [
+        "Configure Applications",
+        "Manage Processes",
+        "Create Snapshots"
+      ]
+    },
+    {
+      "name": "DEPLOYER",
+      "permissions": [
+        "Run Processes",
+        "Create Deployment Requests"
+      ]
+    },
+    {
+      "name": "READER",
+      "permissions": [
+        "View Applications"
+      ]
+    },
+    {
+      "name": "QA_LEAD",
+      "permissions": [
+        "Run Processes",
+        "Approve Gates"
+      ]
+    },
+    {
+      "name": "CHANGE_MANAGER",
+      "permissions": [
+        "Approve Gates"
+      ]
+    },
+    {
+      "name": "SRE_ONCALL",
+      "permissions": [
+        "Run Processes"
+      ]
+    }
+  ]
+}

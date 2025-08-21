@@ -1,0 +1,19 @@
+{
+  "name": "SampleBankingAppHARNESS",
+  "description": "Demo banking app for UCD to Harness migration testing",
+  "tags": [
+    "demo",
+    "migration",
+    "banking"
+  ],
+  "teams": [
+    "DemoTeam"
+  ],
+  "enforceCompleteSnapshots": true,
+  "cleanupDaysToKeep": 30,
+  "notificationScheme": "Default",
+  "applicationProperties": {
+    "ENV_TYPE": "${p:environment/type}",
+    "APP_OWNER": "platform-team@example.com"
+  }
+}

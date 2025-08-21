@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2025-08-19T20:26:48.566532Z",
+  "application": "SampleBankingApp",
+  "contents": [
+    "application/application.json",
+    "application/properties.json",
+    "application/teams.json",
+    "components/*.json",
+    "componentTemplates/*.json",
+    "componentProcesses/*/*.json",
+    "applicationProcesses/*.json",
+    "genericProcesses/*.json",
+    "environments/*.json",
+    "resources/ResourceTree.json",
+    "snapshots/*.json",
+    "integrations/*.json",
+    "security/*.json",
+    "agents/*.json",
+    "versions/*/*.json"
+  ]
+}

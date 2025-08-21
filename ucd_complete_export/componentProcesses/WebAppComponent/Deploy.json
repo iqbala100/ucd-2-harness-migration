@@ -1,0 +1,24 @@
+{
+  "name": "Deploy",
+  "type": "COMPONENT",
+  "description": "Copy WAR & restart Tomcat",
+  "steps": [
+    {
+      "name": "Copy WAR",
+      "plugin": "File Utils",
+      "command": "Copy File",
+      "properties": {
+        "source": "${p:WebAppComponent/artifactPath}",
+        "target": "${p:WebAppComponent/deployPath}"
+      }
+    },
+    {
+      "name": "Restart Tomcat",
+      "plugin": "Shell",
+      "command": "Run Shell",
+      "properties": {
+        "script": "systemctl restart ${p:WebAppComponent/serviceName} || service ${p:WebAppComponent/serviceName} restart"
+      }
+    }
+  ]
+}

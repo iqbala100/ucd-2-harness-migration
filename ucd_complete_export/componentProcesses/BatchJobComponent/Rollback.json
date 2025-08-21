@@ -1,0 +1,14 @@
+{
+  "name": "Rollback",
+  "type": "COMPONENT",
+  "steps": [
+    {
+      "name": "Remove Script",
+      "plugin": "File Utils",
+      "command": "Delete",
+      "properties": {
+        "path": "/opt/batch/run_endofday.sh"
+      }
+    }
+  ]
+}

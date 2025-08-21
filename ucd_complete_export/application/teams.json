@@ -1,0 +1,18 @@
+{
+  "teams": [
+    {
+      "name": "DemoTeam",
+      "roles": [
+        "APPLICATION_ADMIN",
+        "DEPLOYER",
+        "READER"
+      ]
+    },
+    {
+      "name": "DBA",
+      "roles": [
+        "DEPLOYER"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "type": "github",
+  "repo": "github.com/org/samplebanking",
+  "branch": "main",
+  "token": "${p:?github/token}"
+}

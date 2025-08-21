@@ -1,0 +1,9 @@
+[
+  {
+    "name": "tomcat-agent-pool",
+    "agents": [
+      "tomcat-agent-01",
+      "tomcat-agent-02"
+    ]
+  }
+]

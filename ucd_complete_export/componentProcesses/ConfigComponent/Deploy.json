@@ -1,0 +1,24 @@
+{
+  "name": "Deploy",
+  "type": "COMPONENT",
+  "description": "Push config files",
+  "steps": [
+    {
+      "name": "Create Dir",
+      "plugin": "Shell",
+      "command": "Run Shell",
+      "properties": {
+        "script": "mkdir -p ${p:ConfigComponent/configRoot}"
+      }
+    },
+    {
+      "name": "Copy Configs",
+      "plugin": "File Utils",
+      "command": "Copy Directory",
+      "properties": {
+        "source": "/artifacts/config/",
+        "target": "${p:ConfigComponent/configRoot}"
+      }
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Rollback",
+  "type": "COMPONENT",
+  "description": "Remove WAR & restart Tomcat",
+  "steps": [
+    {
+      "name": "Remove WAR",
+      "plugin": "File Utils",
+      "command": "Delete",
+      "properties": {
+        "path": "${p:WebAppComponent/deployPath}/webapp.war"
+      }
+    },
+    {
+      "name": "Restart Tomcat",
+      "plugin": "Shell",
+      "command": "Run Shell",
+      "properties": {
+        "script": "systemctl restart ${p:WebAppComponent/serviceName} || service ${p:WebAppComponent/serviceName} restart"
+      }
+    }
+  ]
+}

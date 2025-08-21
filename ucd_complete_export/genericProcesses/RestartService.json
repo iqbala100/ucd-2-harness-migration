@@ -1,0 +1,22 @@
+{
+  "name": "Restart Service",
+  "type": "GENERIC",
+  "steps": [
+    {
+      "name": "Restart",
+      "plugin": "Shell",
+      "command": "Run Shell",
+      "properties": {
+        "script": "systemctl restart ${p:service}"
+      }
+    },
+    {
+      "name": "Status",
+      "plugin": "Shell",
+      "command": "Run Shell",
+      "properties": {
+        "script": "systemctl status ${p:service} --no-pager || true"
+      }
+    }
+  ]
+}

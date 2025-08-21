@@ -1,0 +1,22 @@
+{
+  "name": "Rollback All",
+  "type": "APPLICATION",
+  "description": "Rollback all nationwide components",
+  "steps": [
+    {
+      "name": "Rollback Web",
+      "component": "WebAppComponent",
+      "process": "Rollback"
+    },
+    {
+      "name": "Rollback DB",
+      "component": "DatabaseComponent",
+      "process": "Rollback"
+    },
+    {
+      "name": "Rollback Batch",
+      "component": "BatchJobComponent",
+      "process": "Rollback"
+    }
+  ]
+}

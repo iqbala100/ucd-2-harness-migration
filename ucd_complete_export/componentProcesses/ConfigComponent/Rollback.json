@@ -1,0 +1,14 @@
+{
+  "name": "Rollback",
+  "type": "COMPONENT",
+  "steps": [
+    {
+      "name": "Restore Backup",
+      "plugin": "Shell",
+      "command": "Run Shell",
+      "properties": {
+        "script": "echo 'restore config backup here'"
+      }
+    }
+  ]
+}
